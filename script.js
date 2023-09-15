@@ -3,6 +3,7 @@ let container = document.querySelector(".container");
 let showFive = document.querySelector(".showFive");
 let showAll = document.querySelector(".showAll");
 let modal = document.querySelector('.modal')
+let cart = document.querySelector('.cart')
 let arr = [];
 let icons = {};
 
@@ -53,5 +54,8 @@ for (let i = 0; i <= 6; i++) {
     arr[6].style.display = "flex";
     arr[5].style.display = "flex";
   };
+  cart.onclick = () => {
+    modal.style.display = "block"
+  }
 }
 container.append(box);
